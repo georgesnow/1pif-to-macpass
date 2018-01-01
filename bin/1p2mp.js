@@ -21,10 +21,10 @@ var argv    = require('yargs')
   .help('help')
   .option('v', { alias: 'version' })
   .version(pkg.version, 'version', 'Display version information')
-  .usage('1PIF to KeePass 2 Converter\n\nUsage: $0 INPUT [-o OUTPUT]')
+  .usage('1PIF to MacPass Converter\n\nUsage: $0 INPUT [-o OUTPUT]')
   .example('$0 input.1pif -o output.xml')
   .example('$0 input.1pif -o - # STDOUT')
-  .epilog('(C) 2015, Mike Green')
+  .epilog('Forked from original 1pif-to-keepass, (C) 2015, Mike Green')
   .argv;
 
 if (!fs.existsSync(argv._[0])) {

@@ -1,29 +1,37 @@
-# 1PIF to KeePass
+# 1PIF to MacPass
 
-by Mike Green
-
-This is a Node module that converts a 1Password `*.1pif` archive to an XML file importable by KeePass 2 and KeePassX 2 alpha.
+A fork of Mike Green's original 1pif-to-keepass, a Node module that converts a 1Password `*.1pif` archive to an XML file importable by MacPass (compatible with 0.7.3)
 
 ## Installation
 
-__Via NPM:__
 ```bash
-npm install 1pif-to-keepass
-```
-
-__Via Git:__
-```bash
-git clone https://github.com/mikedamage/1pif-to-keepass.git
-cd 1pif-to-keepass
+git clone https://github.com/simonguest/1pif-to-macpass.git
+cd 1pif-to-macpass
 npm install
-npm link
 ```
 
 ## Usage
 
-1PIF to KeePass is both a library and a CLI script.
+You can convert files by running `bin/1p2mp.js` script.
 
-### Library
+```
+1PIF to MacPass Converter
+
+Usage: 1p2mp INPUT [-o OUTPUT]
+
+Options:
+  -o, --output   Output file ('-' for stdout)  [default: "-"]
+  -h, --help     Show help  [boolean]
+  -v, --version  Display version information  [boolean]
+
+Examples:
+  1p2mp input.1pif -o output.xml
+  1p2mp input.1pif -o - # STDOUT
+
+Forked from original 1pif-to-keepass, (C) 2015, Mike Green
+```
+
+The original KeyPass code can still also be used as a library, if required:
 
 ```js
 var OPC = require('1pif-to-keepass');
@@ -45,23 +53,4 @@ converter.on('end', function() {
 converter.start();
 ```
 
-### CLI
 
-You can convert files using the included `1p2kp` script.
-
-```
-1PIF to KeePass 2 Converter
-
-Usage: 1p2kp INPUT [-o OUTPUT]
-
-Options:
-  -o, --output   Output file ('-' for stdout)  [default: "-"]
-  -h, --help     Show help  [boolean]
-  -v, --version  Display version information  [boolean]
-
-Examples:
-  1p2kp input.1pif -o output.xml
-  1p2kp input.1pif -o - # STDOUT
-
-(C) 2015, Mike Green
-```

@@ -1,16 +1,16 @@
 {
-  "name": "1pif-to-keepass",
-  "description": "Convert a 1Password export to an XML file importable by KeePass 2",
+  "name": "1pif-to-macpass",
+  "description": "Convert a 1Password export to an XML file importable by MacPass 0.7.3",
   "version": "0.1.0",
   "license": "MIT",
-  "author": "Mike Green <mike.is.green@gmail.com>",
+  "author": "Simon Guest <me@simonguest.com>",
   "preferGlobal": true,
   "bin": {
-    "1p2kp": "bin/1p2kp.js"
+    "1p2kp": "bin/1p2mp.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mikedamage/1pif-to-keepass.git"
+    "url": "https://github.com/simonguest/1pif-to-macpass.git"
   },
   "main": "index.js",
   "dependencies": {

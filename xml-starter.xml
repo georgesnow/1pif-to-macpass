@@ -1,36 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <KeePassFile>
-    <Meta>
-        <Generator>1pif-to-keepass</Generator>
-        <RecycleBinEnabled>True</RecycleBinEnabled>
-    </Meta>
-    <Root>
-        <Group>
-            <Name>Database</Name>
-            <Notes />
-            <IconID>1</IconID>
-            <Times>
-                <CreationTime></CreationTime>
-                <Expires>False</Expires>
-            </Times>
-            <IsExpanded>True</IsExpanded>
-            <DefaultAutoTypeSequence />
-            <EnableAutoType>null</EnableAutoType>
-            <EnableSearching>True</EnableSearching>
-
-            <Group>
-                <Name>Imported</Name>
-                <Notes />
-                <IconID>1</IconID>
-                <Times>
-                    <CreationTime></CreationTime>
-                    <Expires>False</Expires>
-                </Times>
-                <IsExpanded>True</IsExpanded>
-                <DefaultAutoTypeSequence />
-                <EnableAutoType>null</EnableAutoType>
-                <EnableSearching>True</EnableSearching>
-            </Group>
-        </Group>
-    </Root>
+  <Meta>
+    <Generator>MacPass</Generator>
+    <DatabaseName>Database</DatabaseName>
+  </Meta>
+  <Root>
+    <Group>
+      <UUID/>
+      <Name>Imported</Name>
+      <Notes/>
+      <IconID>48</IconID>
+    </Group>
+  </Root>
 </KeePassFile>
